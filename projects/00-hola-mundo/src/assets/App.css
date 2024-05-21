@@ -25,10 +25,21 @@
     border-radius: 1000px;
 }
 
-article button{
+.tw-followCard-button{
+    cursor: pointer;
     margin-left: 16px;
     border:0;
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
+    transition: .3s background-color;
 }
+
+
+.tw-followCard-button:hover{
+    background-color: rgb(68, 70, 70);
+    color: #fff;
+}
+
+.tw-followCard-button.is-following:hover{
+    background: red;}
