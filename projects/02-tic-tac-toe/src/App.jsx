@@ -20,8 +20,9 @@ const handleClick=()=>{
 }
 
 function App(){
-  const [board, setBoard] = useState(Array(9).fill(null))
-console.log(board)
+  const [board, setBoard] = useState(
+    Array(9).fill(null)
+  )
 const [turn, setTurn] =useState(TURNS.X)
 
 const updateBoard=(index)=>{
@@ -40,7 +41,8 @@ setTurn(newTurn)
       {
         board.map((_, index)=>{
           return (
-            <Square key={index}
+            <Square
+            key={index}
             index={index}
             updateBoard={updateBoard}
             >
